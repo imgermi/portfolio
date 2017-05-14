@@ -97,7 +97,8 @@ a {
     bottom: 100%;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 100%;
+    border-radius: 25px;
     background: #5887FF;
     z-index: -1;
     transition: all 150ms ease-in-out;
