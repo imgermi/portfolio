@@ -95,20 +95,23 @@ a
 	-webkit-transition: all 200ms ease-in-out
 	overflow: hidden
 	border: 2px solid $blue
+	a
+		color: #fff
+		display: block
 	&:before
 		content: ''
 		position: absolute
-		top: 0
+		bottom: 100%
 		left: 0
 		width: 100%
-		height: 0
+		height: 100px
 		background: $blue
 		z-index: -1
 		transition: all 150ms ease-in-out
 		-moz-transition: all 150ms ease-in-out
 		-webkit-transition: all 150ms ease-in-out
 	&:hover:before
-		height: 100%
+		bottom: 0
 @media(max-width: 479px)
 	.button
 		padding: 20px
@@ -193,10 +196,14 @@ a
 			transform: translateY(5px)
 			transition-property: transform,opacity
 			opacity: 0
-	&:nth-child(1), &:nth-child(4)
+	&:nth-child(2)
 		background: $black
+	&:nth-child(3)
+		background: #bbb
+	&:nth-child(4)
+		background: #424242
 	&:hover .overlay
-		background-color: rgba(0,0,0,0.7)
+		background-color: rgba(0,0,0,1)
 	&:hover .overlay p, &:hover .overlay .button
 		opacity: 1
 		transform: translateY(0)
@@ -204,6 +211,13 @@ a
 @media(max-width: 767px)
 	.work-box
 		width: 100%
+		height: 470px
+		.overlay
+			padding: 30px
+			p
+				margin-bottom: 40px
+			.button
+				position: static
 // Contact
 form
 	width: 50%
@@ -267,3 +281,26 @@ footer
 			color: $blue
 			&:hover
 				opacity: 0.6
+	.social
+		position: absolute
+		right: 15px
+		top: 0
+		a
+			display: inline-block
+			width: 25px
+			height: 25px
+			margin-right: 10px
+			&:last-child
+				margin-right: 0
+			&:hover
+				opacity: 0.5
+			img
+				width: 25px
+				height: 25px
+
+@media(max-width: 479px)
+	footer
+		text-align: center
+		.social
+			padding-top: 20px
+			position: static

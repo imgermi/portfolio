@@ -3,6 +3,7 @@
 <head>
 	<title>Juan Germano - Web designer and developer</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,600" rel="stylesheet">
@@ -18,40 +19,40 @@
 <article class="top">
 	<div class="container">
 		<div class="text">
-			<h1>My name is <span>Juan Germano</span>. Currently developing interfaces at Synapsis CI & building websites as a freelancer. </h1>
-			<div class="button">Check my works</div>
+			<h1 class="wow fadeInDown">My name is <span>Juan Germano</span>. Currently developing interfaces at Synapsis CI & building websites as a freelancer. </h1>
+			<div class="button wow fadeInUp" id="check-works"><a>Check my works</a></div>
 		</div>
 	</div>
 </article>
 
-<article class="banda work">
+<article class="banda work" id="work">
 	<div class="container">
-		<section class="work-box">
+		<section class="work-box wow fadeInLeft">
 			<div class="overlay">
 				<h3>Fucer</h3>
 				<p>FUCER is offering law online courses in Argentina. I designed and developed a landing page in conjunction with a virtual campus for students. Back-end was done by <a href="">Andrés Damesón</a>.</p>
-				<a href="" class="button">Check site</a>
+				<a href="http://fucer.com.ar" target="_blank" class="button">Check site</a>
 			</div>
 		</section>
-		<section class="work-box">
+		<section class="work-box wow fadeInRight">
 			<div class="overlay">
 				<h3>María Gomez Centurión</h3>
 				<p>Designer based in Buenos Aires, specialized in editorial content. I built a simple and clean landing page to show her projects.</p>
-				<a href="" class="button">Check site</a>
+				<a href="http://mgomezcenturion.com.ar" target="_blank" class="button">Check site</a>
 			</div>
 		</section>
-		<section class="work-box">
+		<section class="work-box wow fadeInLeft">
 			<div class="overlay">
 				<h3>Panden Industrial</h3>
 				<p>Industrial supply company based in Buenos Aires, providing to clients around the country and Latin America. Together with my partner Alejandro Aboy, who was in charge of content, SEO and the AdWords campaign, we built a website, being our first project as <a href="">NOVALOG</a>.</p>
-				<a href="" class="button">Check site</a>
+				<a href="http://pandenindustrial.com.ar" target="_blank" class="button">Check site</a>
 			</div>
 		</section>
-		<section class="work-box">
+		<section class="work-box wow fadeInRight">
 			<div class="overlay">
 				<h3>Your next project</h3>
 				<p>This could be you. If you like my work, don’t hesitate in contacting me to start a new project together.</p>
-				<a href="" class="button">Contact me</a>
+				<a class="button" id="contact-me">Contact me</a>
 			</div>
 		</section>
 	</div>
@@ -59,8 +60,8 @@
 
 <article class="banda contact">
 	<div class="container">
-		<h2>Contact me</h2>
-		<form>
+		<h2 class="wow fadeInDown">Contact me</h2>
+		<form class="wow fadeIn">
 			<input type="text" name="name" placeholder="Your name">
 			<input type="email" name="email" placeholder="Your email">
 			<textarea rows="10" placeholder="Your message"></textarea>
@@ -74,8 +75,20 @@
 	<div class="container">
 		<h4>Juan Germano - 2017</h4>
 		<span>Hosted on <a href="">GitHub Pages</a></span>
+		<div class="social">
+			<a href="https://www.instagram.com/juan.germano/" target="_blank"><img src="images/footer/instagram.svg" alt="Instagram Icon"></a>
+			<a href="https://twitter.com/juan_germano" target="_blank"><img src="images/footer/twitter.svg" alt="Twitter Icon"></a>
+			<a href="https://github.com/juangermano/portfolio" target="_blank"><img src="images/footer/github.svg" alt="Github Icon"></a>
+		</div>
 	</div>
 </footer>
 
 </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<script src="js/functions.js"></script>
