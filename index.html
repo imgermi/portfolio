@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Juan Germano - Web designer and developer</title>
+	<title>Juan Martín Germano - Web Designer</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,13 +19,14 @@
 <article class="top">
 	<div class="container">
 		<div class="text">
-			<h1 class="wow fadeInDown">My name is <span>Juan Germano</span>. Currently developing interfaces at Synapsis CI & building websites as a freelancer. </h1>
-			<div class="button wow fadeInUp" id="check-works"><a>Check my works</a></div>
+			<h1 class="wow fadeInDown">My name is <span>Juan Martín Germano</span>. Currently developing interfaces at Synapsis CI & building websites as a freelancer. </h1>
+			<!-- <div class="button wow fadeInUp" id="check-works"><a>Check my works</a></div> -->
+			<div class="button wow fadeInUp" id="contact-me"><a>Contact me</a></div>
 		</div>
 	</div>
 </article>
 
-<article class="banda work" id="work">
+<!-- <article class="banda work" id="work">
 	<div class="container">
 		<section class="work-box wow fadeInLeft">
 			<div class="overlay">
@@ -56,16 +57,19 @@
 			</div>
 		</section>
 	</div>
-</article>
+</article> -->
 
 <article class="banda contact">
 	<div class="container">
 		<h2 class="wow fadeInDown">Contact me</h2>
-		<form class="wow fadeIn">
+		<form class="wow fadeIn" action="https://getsimpleform.com/messages?form_api_token=3a7dc350d86972bbe4cb9c450a275933" method="post">
+			<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+			<input type='hidden' name='redirect_to' value='<the complete return url e.g. http://germano.design/thank-you.html>' />
+			<!-- all your input fields here.... -->
 			<input type="text" name="name" placeholder="Your name">
-			<input type="email" name="email" placeholder="Your email">
-			<textarea rows="10" placeholder="Your message"></textarea>
-			<button type="submit" class="button">Send</button>
+			<input type="email" name="_replyto" placeholder="Your email">
+			<textarea rows="10" name="message" placeholder="Your message"></textarea>
+			<button type="submit" value="Send" class="button">Send</button>
 			<span>You can also email me directly to <a href="mailto:juanmartingermano@gmail.com">juanmartingermano@gmail.com</a></span>
 		</form>
 	</div>
